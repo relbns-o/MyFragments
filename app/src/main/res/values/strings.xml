@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">MyFragments</string>
+    <string name="title_home">Colors</string>
+    <string name="title_dashboard">WebView</string>
+    <string name="title_notifications">Orientation</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="tblPersons_name">Name:</string>
+    <string name="tblPersons_weight">Weight:</string>
+    <string name="tblPersons_age">Age:</string>
+    <string name="tblPersons_gender">Gender:</string>
+</resources>

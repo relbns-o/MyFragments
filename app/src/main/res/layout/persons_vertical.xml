@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/recycler_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+    </FrameLayout>
+    <FrameLayout
+        android:id="@+id/add_person_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:stretchColumns="1">
+            <TableRow>
+                <TextView
+                    android:text="@string/tblPersons_name"
+                    android:padding="3dip" />
+                <EditText
+                    android:gravity="center"
+                    android:padding="3dip"
+                    android:tag="1"
+                    />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:text="@string/tblPersons_weight"
+                    android:padding="3dip" />
+                <EditText
+                    android:gravity="center"
+                    android:padding="3dip"
+                    android:tag="2"
+                    />
+            </TableRow><TableRow>
+            <TextView
+                android:text="@string/tblPersons_age"
+                android:padding="3dip" />
+            <EditText
+                android:gravity="center"
+                android:padding="3dip"
+                android:tag="3"
+                />
+        </TableRow><TableRow>
+            <TextView
+                android:text="@string/tblPersons_gender"
+                android:padding="3dip" />
+            <EditText
+                android:gravity="center"
+                android:padding="3dip"
+                android:tag="4"
+                />
+        </TableRow>
+        </TableLayout>
+        <Button
+            android:id="@+id/btnAddPerson"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Add Above data as new Person"
+            android:textAllCaps="false"
+            />
+        </LinearLayout>
+    </FrameLayout>
+    <FrameLayout
+        android:id="@+id/details_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:stretchColumns="1">
+            <TableRow>
+                <TextView
+                    android:text="@string/tblPersons_name"
+                    android:padding="3dip" />
+                <TextView
+                    android:gravity="center"
+                    android:padding="3dip"
+                    android:tag="11"
+                    />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:text="@string/tblPersons_weight"
+                    android:padding="3dip" />
+                <TextView
+                    android:gravity="center"
+                    android:padding="3dip"
+                    android:tag="22"
+                    />
+            </TableRow><TableRow>
+                <TextView
+                    android:text="@string/tblPersons_age"
+                    android:padding="3dip" />
+                <TextView
+                    android:gravity="center"
+                    android:padding="3dip"
+                    android:tag="33"
+                    />
+            </TableRow><TableRow>
+                <TextView
+                    android:text="@string/tblPersons_gender"
+                    android:padding="3dip" />
+                <TextView
+                    android:gravity="center"
+                    android:padding="3dip"
+                    android:tag="44"
+                    />
+            </TableRow>
+        </TableLayout>
+    </FrameLayout>
+
+</LinearLayout>
